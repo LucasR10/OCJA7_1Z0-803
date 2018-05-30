@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=WrappersBoolean
+comment0.text=\r\n\ Escbreva\ a\ descri\u00E7\u00E3o\ da\ classe\ ClassesWrappers\ aqui.\r\n\ \r\n\ @author\ (seu\ nome)\ \r\n\ @version\ (n\u00FAmero\ de\ vers\u00E3o\ ou\ data)\r\n
+comment1.params=arg
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Usando\ as\ classes\ Wrappers\ \r\n\ \ Tipos\ primitivos\:\ \r\n\ \ \ \ \ \ boolean,\ char,\ byte,\ short,\ int,long,\ float,\ double;\r\n\ \ Tipos\ Wrapper\r\n\ \ Boolean,\ Caracter,\ Byte,\ Short,\ Integer,\ Long,\ Float,\ Double\r\n
+numComments=2
