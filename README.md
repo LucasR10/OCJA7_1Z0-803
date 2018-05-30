@@ -1,7 +1,7 @@
 # OCJA7_1Z0-803 - Associated Certification Java SE 7 Programmer I
 
 
-**Este é o arquivo README do projeto. Você deve descrever aqui o seu projeto.
+Este é o arquivo README do projeto. Você deve descrever aqui o seu projeto.
 Informe ao usuário (alguém que não sabe nada sobre este projeto!) tudo que
 ele/ela precisa saber. Os comentários devem incluir, pelo menos:
 
