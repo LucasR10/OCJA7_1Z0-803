@@ -9,6 +9,7 @@ public class WrapperString {
        System.out.println(p);
     }  
     
+     public  WrapperString(String s){  }
     public static void main(String[] args) {
     
          /**usando string */
@@ -24,10 +25,10 @@ public class WrapperString {
         print(minhaString5);
         
         /** usando raplace **/
-        String pasandoStringComoParametro = " Este coment�rio foi p�ssimo!";
-        print( pasandoStringComoParametro.replace("p�ssimo","ruim") );
+        String pasandoStringComoParametro = " Este comentario foi pessimo!";
+        print( pasandoStringComoParametro.replace("pessimo","ruim") );
          
-        String pasandoCharComoParametro = "recebendo um char como par�metro ! ";
+        String pasandoCharComoParametro = "recebendo um char como parametro ! ";
         print( pasandoCharComoParametro.replace('!', '?') );
           
         /** Usando o trim! **/
@@ -46,42 +47,54 @@ public class WrapperString {
         print( "valor".toUpperCase() );
         print( "ValOr ".toLowerCase() );
         
-        /* usando substring  */
-        
-        
-        
+        /** usando substring: substrin busca da posição inicaal ate a posicção final - 1  */
         String sbustring = UNIVERSIDADE;//0 a 11
-             
-        print("sbustring ->  1 " + sbustring.substring(7) );//iniciando na posi��o 3. print 4
-        print("sbustring ->  2 " + sbustring.substring(7,10) ); // inciando na posi��o 2 3 3: print 34
-        
-       //charAt : Retorna o caractere que estiver na posi��o do �ndice passado como par�metro (iniciado em zero).
+        print("sbustring ->  1 " + sbustring.substring(7) );//iniciando na posicão 3. print 4
+        print("sbustring ->  2 " + sbustring.substring(7,10) ); // inciando na posicão 2 3 3: print 34
+        print("sbustring -> 3 " + sbustring.substring(1,4) ); // inciando na posicão 2 3 3: print 34
+      
+        /** charAt : Retorna o caractere que estiver na 
+        *            posição do índice passado como parametro (iniciado em zero). **/
         char c = charAt(3);//retorna v
         print(c);
         
-       //concat : retorna a jun��o da String na qual o m�todo est� sendo chamado adicionando ao seu final a String passada por par�metro (�str�).  
+       /** concat : retorna a junção da String na qual o método está sendo chamado 
+        *            adicionando ao seu final a String passada por parametro (str). **/  
         String c1 = concat("de brasilia ");
         print(c1);
         
-        //public int indexOf(int ch) : Tem fun��o inversa ao charAt(): retorna a posi��o (�ndice) em que se encontra na String o caractere pesquisado.
+        /** public int indexOf(int ch) : Tem função inversa ao charAt():
+                     retorna a posiçãoo (indice) em que se encontra na String o caractere pesquisado. **/
+                     
         print( indexOfChar('U') );
         print( indexOfInt(2) );
         
-        // startsWith e endWith
+        /** startsWith e endWith **/
         
         print( UNIVERSIDADE.startsWith("u") );// true
         print( UNIVERSIDADE.endsWith("E") );// true
         
-        
+        /** contentEquals e codePointAt **/
+        print(" contentEquals "+ UNIVERSIDADE.contentEquals("E") ) ;//contador;
+        print(" codePointAt " + UNIVERSIDADE.codePointAt(2) );
+        print(" codePointBefore " +  UNIVERSIDADE.codePointBefore(1) );
+          
+        /** 
+         * Concatennação de Strings 
+         * se caso iniciar com String ele concatena e nã soma;
+         */
         print("" + 3 + 6 );
         print(3+6+""+ 1 + 11 );
         print(3+6 +"" +3+6);
-         print("" +3+6);
-         
-         System.out.println("" +5 + 6);   //1 
-         System.out.println(5 + "" +6);   // 2 
-         System.out.println(5 + 6 +"");   // 3 
-         System.out.println(5 + 6);       // 4
+        print("" +3+6);
+
+     
+         System.out.println("------------------------------"); 
+         System.out.println("" + 1 + 2);   //1 inicaia com string vai concatena.
+         System.out.println(3 + "" +4);   // 2  
+         System.out.println(5 + 6 +"");   // 3 inicia com dois numero elé soma.
+         System.out.println(7 + 8);       // 4
+         System.out.println(""+ 7 + 8 +"");  //5
     }
     
     public static int indexOfInt(int ch){
@@ -92,6 +105,7 @@ public class WrapperString {
       return UNIVERSIDADE.indexOf(ch);
     }
      
+    
     
     public static char charAt(int index){
      return UNIVERSIDADE.charAt(index);
@@ -108,6 +122,6 @@ public class WrapperString {
 class TestClass{
   static String str;
   public static void main(String[] args){
-     System.out.println(str);
+     System.out.println(str);///imprime null
   }
 }
