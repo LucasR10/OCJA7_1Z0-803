@@ -1,4 +1,5 @@
-
+import java.util.ArrayList;
+import java.util.List;
 
 public class TiposReferencia{
    
@@ -26,6 +27,20 @@ public class TiposReferencia{
        
         System.out.println(" o " + o.valor );
         System.out.println(" obj " + obj.valor );
+        
+        /** Referencia com arrays */
+        List<String> lista = new ArrayList<>();
+        
+        List<String> listaCopy = lista;
+        listaCopy.add("add1");
+        listaCopy.add("add1");// mesmo alterando a referenica altera os dois;
+        
+       lista.add("add1 4");
+        
+        System.out.println("lista copy : " +lista.size() );
+        System.out.println("lista1Copy size : " + listaCopy.size() );
+        
+        
     }
 
     
