@@ -2,4 +2,5 @@
 comment0.target=DataTypesInJava
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ \ \ \ \ \ Os\ tipos\ inteiros\ t\u00EAm\ os\ seguintes\ tamanhos\:\r\n\r\n\ \ \ \ \ \ byte\ -\ 1\ byte\ (8\ bits,\ de\ -128\ a\ 127);\r\n\ \ \ \ \ \ short\ -\ 2\ bytes\ (16\ bits,\ de\ \u201332.768\ a\ 32.767);\r\n\ \ \ \ \ \ char\ -\ 2\ bytes\ (s\u00F3\ positivo),\ (16\ bits,\ de\ 0\ a\ 65.535);\r\n\ \ \ \ \ \ int\ -\ 4\ bytes\ (32\ bits,\ de\ \u20132.147.483.648\ a\ 2.147.483.647);\r\n\ \ \ \ \ \ long\ -\ 8\ bytes\ (64\ bits,\ de\ \u20139.223.372.036.854.775.808\ a\ 9.223.372.036.854.775.807).\r\n
 numComments=2

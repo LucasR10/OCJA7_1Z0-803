@@ -8,6 +8,9 @@ public class StringBufferStringBuilder {
      
     public static void main(String[] args) {
       
+        StringBuilder criando = new StringBuilder();
+        StringBuffer buffer =  new StringBuffer();
+        
         sb.append("Ola");
         add();
         sb.append("10");

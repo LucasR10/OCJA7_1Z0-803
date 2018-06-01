@@ -72,8 +72,9 @@ public class WrappersInteger {
      Integer parseInt = Integer.parseInt("3");
      System.out.println("parseInt: " + parseInt );
      
-    // Integer parseInt2 =Integer.parseInt("4", 1);
-    // System.out.println(" parseInt2: " +  parseInt2 );
+     /** Converção de bases:binari, hex, octal **/
+     Integer parseInt2 =Integer.parseInt("0110111", /*base*/ 2);
+     System.out.println(" parseInt 0110111 para : " +  parseInt2 );
     
      Integer valuOfInt =Integer.valueOf(24);
      System.out.println("valuOfInt: " + valuOfInt );
@@ -81,8 +82,9 @@ public class WrappersInteger {
      Integer valuOfStr =Integer.valueOf("24");
      System.out.println("valuOfStr: " + valuOfStr );
      
-     //Integer valuOfRadix =Integer.valueOf("24",3);
-     //System.out.println("valuOfRadix: " + valuOfRadix );
+     /** Converção de bases:binari, hex, octal **/
+     Integer valuOfRadix =Integer.valueOf("0101110",/*base*/ 2);
+     System.out.println("valuOf 0101110 para   : " + valuOfRadix );
     
      /** binari, hex, octal **/
      int numero = 10;
@@ -105,7 +107,40 @@ public class WrappersInteger {
       /** Modificar uma referencia Global */
       wInteger.modificarReferenciaGlobal(3);
       System.out.println(" Referencia Global:" + wInteger.gInteger);
-  
+      
+      /** static compare: compara dois inteiros primitivos compare -1, 0, 1 */ 
+      
+       int compara1 = Integer.compare(5 , 5);
+       System.out.println("Compara 5 = 5 retorna   :" + compara1);
+       
+       int compara2 = Integer.compare(5 , 3);
+       System.out.println("Compara 5 > 3  retorna   :" + compara2);
+       
+       int compara3 = Integer.compare(3 , 5);
+       System.out.println("Compara 3 < 5  retorna   :" + compara3);
+       
+       /** compareTO: compara dos objetos Integer */
+       Integer compareInteger = 23;
+       
+       int compareTo = compareInteger.compareTo( new Integer(23) );
+       System.out.println("compareTo 23 == 23  :" + compareTo);
+       
+       int compareTo1 = compareInteger.compareTo(new Integer(40) );
+       System.out.println("compareTo 23 < 40   :" + compareTo1);
+       
+       int compareTo2 = compareInteger.compareTo( new Integer(10) );
+       System.out.println("compareTo 23 > 10   :" + compareTo2);
+       
+       
+       /** metodo reverse  **/
+       
+       Integer reverse = 123456789;
+       System.out.println(reverse + " reverse " + Integer.reverse( reverse ) );
+       
+       /** descodifica uma String da base 64 para um Integer. 
+       String stringCodificada = "NTU=";
+       int decode = Integer.decode( stringCodificada );
+       System.out.println("Encode Base 64 - " + stringCodificada + "Decode :" + decode ); **/
   }
   
   public Integer modificarReferenciaLocal(Integer i){
