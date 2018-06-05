@@ -83,6 +83,7 @@ public class OperadoresJava {
          //byte b1 = b1 + 4 ; /** Não compila, conta com int devolve int */
           
          byte b2 = 3; //compila
+         /** todas as operações : +=, -= ; *= ; /=* %= usuaram cast implicito ;/
          b2 += 2; // compila para valores bem altos; Ele faz casting e roda normalmente;
          /** 
           Precedência de  operadores do Java, saber o básico, que primeiro são executados 

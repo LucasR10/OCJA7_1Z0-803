@@ -40,18 +40,33 @@ public class TiposReferencia{
         System.out.println("lista copy : " +lista.size() );
         System.out.println("lista1Copy size : " + listaCopy.size() );
         
+        /** tipos de efernecia super tipos */
         
+        // super para a sublcas;
+        Foo b1 =  new Bar();
+        b1.compila();
+        
+        //Bar b2 = new Foo();// Não pe valido ! Foo não e subclass de Bar.
+        Bar b2 = (Bar) new Foo();  
+        b2.compila();
     }
 
     
 }
 
+class Foo{
+ void compila(){ System.out.println("Compila !"); }
+}
+class Bar extends Foo {
+    
+}
 
 class ObjetoMeu{
  int valor;
  
  public ObjetoMeu mudarValorReferencia ( ObjetoMeu obj ){
       obj.valor = 100;
+      if(true){}else{}
      return obj;
  }
    
